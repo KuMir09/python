@@ -52,7 +52,7 @@ else:
 system_cpu_usage = int(psutil.cpu_percent(interval=1))
 print("Your current system CPU usage is:", system_cpu_usage)
 if system_cpu_usage > cpu_threshold:
-    print("As your current CPU usage", system_cpu_usage, "exeeds the threshold value", cpu_threshold, "an Alert is being sent...")
+    print("As your current CPU usage", system_cpu_usage, "exceeds the threshold value", cpu_threshold, "an Alert is being sent...")
 else:
     print("System CPU is Healthy")
 
@@ -83,7 +83,7 @@ disk_used=psutil.disk_usage('.')
 system_disk_usage=round(disk_used.percent)
 print("Your current Disk usage is: ", system_disk_usage)
 if system_disk_usage > disk_threshold:
-    print("As your current Disk usage", system_disk_usage, "exeeds the threshold value", disk_threshold, "an Alert is being sent...")
+    print("As your current Disk usage", system_disk_usage, "exceeds the threshold value", disk_threshold, "an Alert is being sent...")
 else:
     print("System Disk is healthy")
 
@@ -115,7 +115,7 @@ memory_used = psutil.virtual_memory()
 system_memory_used = round(memory_used.percent)
 print("Your current Memory usage is: ", system_memory_used)
 if system_memory_used > memory_threshold:
-    print("As your current Memory usage", system_memory_used, "exeeds the threshold value", memory_threshold, "an Alert is being sent...")
+    print("As your current Memory usage", system_memory_used, "exceeds the threshold value", memory_threshold, "an Alert is being sent...")
 else:
     print("System Memory is healthy")
 
